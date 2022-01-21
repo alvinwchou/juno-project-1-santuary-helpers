@@ -1,2 +1,27 @@
 /* _header.scss */
 
+header {
+    background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 200vh;
+    .wrapper {
+        display: block;
+    }
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    ul {
+        display: flex;
+        // justify-content: space-evenly;
+    }
+}
+
+h1 {
+    width: 50%;
+}
+
+
