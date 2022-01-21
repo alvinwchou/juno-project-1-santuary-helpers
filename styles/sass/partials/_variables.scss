@@ -1,16 +1,18 @@
 // _variables.scss
 
 // site fonts
-$headingFont: "Yong Serif";
-$bodyFont: "Jakarta Sans";
+// font-family: 'Kumar One', cursive;
+// font-family: 'Kumar One Outline', cursive;
+// font-family: 'Lato', sans-serif;
+$headFont: 'Kumar One Outline', cursive;
+$headingFont: 'Kumar One', cursive;
+$bodyFont: 'Lato', sans-serif;
 // if we set our root element font-size to 125%, then 1 rem = 20px
 $baseFontSize: 1rem;
 
 // site colors
-$primary: #084b6d; 
-$secondary: #f4fcff; 
-$tertiary: #f8fbf3; 
-$quaternary: #fff5f5; 
-$quinary: #ffd698; 
-$pastelBlue: #d3f0f9;
+$primary: #f8fb05; 
+$secondary: #065635; 
+$tertiary: #e0fddf; 
 $solidWhite: #fff; 
+$solidBlack: #000;

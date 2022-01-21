@@ -10,18 +10,16 @@
 // }
 
 
-// font-family: 'Kumar One', cursive;
-// font-family: 'Kumar One Outline', cursive;
-// font-family: 'Lato', sans-serif;
+
 h1 {
-    font-family: 'Kumar One Outline', cursive;
+    font-family: $headFont;
     font-weight: 400;
     font-size: 3.4rem;
     line-height: 64px;
 }
 
 h2 {
-    font-family: 'Kumar One', cursive;
+    font-family: $bodyFont;
     font-weight: 400;
     font-size: 1.65rem;
     line-height: 58px;
@@ -29,7 +27,7 @@ h2 {
 }
 
 i {
-    font-family: 'Kumar One', cursive;
+    font-family: $bodyFont;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 24px;
@@ -45,7 +43,7 @@ i {
 }
 
 .button {
-    font-family: 'Kumar One', cursive;
+    font-family: $bodyFont;
     font-weight: 400;
     text-align: center;
     line-height: 32px;
