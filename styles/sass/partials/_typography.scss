@@ -9,3 +9,52 @@
 //     font-weight: normal;
 // }
 
+
+// font-family: 'Kumar One', cursive;
+// font-family: 'Kumar One Outline', cursive;
+// font-family: 'Lato', sans-serif;
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 64px;
+}
+
+h2 {
+    font-family: 'Kumar One', cursive;
+    font-weight: 400;
+    font-size: 1.65rem;
+    line-height: 58px;
+    letter-spacing: 2.1px;
+}
+
+i {
+    font-family: 'Kumar One', cursive;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 24px;
+    letter-spacing: 1.2px;
+}
+
+.nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 1.4px;
+}
+
+.button {
+    font-family: 'Kumar One', cursive;
+    font-weight: 400;
+    text-align: center;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
