@@ -2,3 +2,56 @@
 /* _sections.scss */
 
 /* discovering */
+.discovering {
+    .textContainer {
+        width: 75%;
+    }
+}
+
+
+/* gallery */
+.gallery {
+    background-color: $tertiary;
+    .wrapper {
+        justify-content: space-between;
+        .imgContainer {
+            width: 30%;
+        }
+    }
+}
+
+
+/* more */
+.more {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .flexContainer {
+        width: 50%;
+        display: flex;
+    }
+}
+
+
+/* group and locations */
+.group, .locations {
+    display: flex;
+    .imgContainer,
+    .textContainer {
+        width: 50%;
+    }
+}
+
+/* style */
+.style {
+    text-align: center;
+}
+
+/* footer */
+footer {
+    background-color: $solidBlack;
+    text-align: center;
+    p {
+        color: $solidWhite;
+    }
+}

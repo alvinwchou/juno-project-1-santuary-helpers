@@ -343,5 +343,60 @@ h1 {
 /* main */
 /* _sections.scss */
 /* discovering */
+.discovering .textContainer {
+  width: 75%;
+}
+
+/* gallery */
+.gallery {
+  background-color: #e0fddf;
+}
+.gallery .wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gallery .wrapper .imgContainer {
+  width: 30%;
+}
+
+/* more */
+.more .wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.more .flexContainer {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* group and locations */
+.group, .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.group .imgContainer,
+.group .textContainer, .locations .imgContainer,
+.locations .textContainer {
+  width: 50%;
+}
+
+/* style */
+.style {
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  text-align: center;
+}
+footer p {
+  color: #fff;
+}
+
 /* _footer.scss */
 /* _mediaQueries.scss */
