@@ -1,3 +1,30 @@
 /* _baseStyles.scss */
-// apply the most frequently or gloablly - margin, font size, img, wrapper, ul, font, font color.
+// apply the most frequently or gloablly - margin/padding, font size, img, wrapper, ul, a.
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 125%;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
