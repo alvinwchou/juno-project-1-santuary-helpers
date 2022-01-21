@@ -237,38 +237,43 @@ h1 {
   font-weight: 400;
   font-size: 3.4rem;
   line-height: 64px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Lato", sans-serif;
+  font-family: "Kumar One", cursive;
   font-weight: 400;
   font-size: 1.65rem;
   line-height: 58px;
   letter-spacing: 2.1px;
+  text-transform: uppercase;
 }
 
 i {
-  font-family: "Lato", sans-serif;
+  font-family: "Kumar One", cursive;
   font-weight: 400;
   font-size: 1.1rem;
   line-height: 24px;
   letter-spacing: 1.2px;
 }
 
-.nav {
+a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-align: center;
   line-height: 29px;
   letter-spacing: 1.4px;
+  color: #000;
+  text-transform: uppercase;
 }
 
 .button {
-  font-family: "Lato", sans-serif;
+  font-family: "Kumar One", cursive;
   font-weight: 400;
   text-align: center;
   line-height: 32px;
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 p {
@@ -294,7 +299,7 @@ img {
 }
 
 .wrapper {
-  max-width: 1080px;
+  max-width: 1400px;
   width: 80%;
   margin: 0 auto;
   display: -webkit-box;
@@ -321,6 +326,10 @@ header .wrapper {
   display: block;
 }
 
+.wrapper {
+  border: 1px solid red;
+}
+
 nav {
   width: 100%;
   display: -webkit-box;
@@ -334,10 +343,20 @@ nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 475px;
+  border: 1px solid red;
+}
+nav ul li {
+  padding-top: 35px;
 }
 
 h1 {
   width: 50%;
+  padding-top: 14px;
+  margin-left: 134px;
 }
 
 /* main */

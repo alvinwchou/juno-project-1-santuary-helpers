@@ -16,42 +16,48 @@ h1 {
     font-weight: 400;
     font-size: 3.4rem;
     line-height: 64px;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-family: $bodyFont;
+    font-family: $headingFont;
     font-weight: 400;
     font-size: 1.65rem;
     line-height: 58px;
     letter-spacing: 2.1px;
+    text-transform: uppercase;
 }
 
 i {
-    font-family: $bodyFont;
+    font-family: $headingFont;
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 24px;
     letter-spacing: 1.2px;
 }
 
-.nav {
-    font-family: 'Lato', sans-serif;
+a {
+    font-family: $bodyFont;
     font-weight: 700;
     text-align: center;
     line-height: 29px;
     letter-spacing: 1.4px;
+    color: $solidBlack;
+    text-transform: uppercase;
 }
 
 .button {
-    font-family: $bodyFont;
+    font-family: $headingFont;
     font-weight: 400;
     text-align: center;
     line-height: 32px;
     letter-spacing: 1px;
+    // color: $solidWhite;
+    text-transform: uppercase;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: $bodyFont;
     font-weight: 400;
     line-height: 32px;
     letter-spacing: 2px;
