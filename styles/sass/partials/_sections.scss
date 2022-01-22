@@ -61,17 +61,17 @@
         .imgContainer,
         .flexContainer {
             width: 50%;
-            // border: 3px dotted darkgoldenrod;
         }
         .flexContainer {
             justify-content: center;
-            align-items: center;
         }
     }
     .textContainer {
         width: 65%;
-        height: clamp(100px, 437.13 / 1750 * 100vw, 437.13px);
-        padding-top: 30px;
+        height: clamp(100px, 437.13 / 1818.18 * 100vw, 437.13px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .imgContainer {
         position: absolute;
@@ -82,8 +82,8 @@
     .flexContainer {
         justify-content: end;
         .imgContainer {
-            top: 0;
-            left: 0;
+            top: -8%;
+            left: -8%;
             box-shadow: 20px 20px $primary;
         }
     }
@@ -91,9 +91,12 @@
 
 .locations {
     .imgContainer {
-        top: 0;
-        right: 0;
+        top: 8%;
+        right: -8%;
         box-shadow: -20px 20px $primary;
+    }
+    .textContainer {
+        text-align: right;
     }
 }
 
