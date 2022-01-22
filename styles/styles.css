@@ -383,8 +383,8 @@ h1 {
   width: 65%;
 }
 .discovering .imgContainer .boxShadow {
-  -webkit-box-shadow: -15px 15px #f8fb05;
-          box-shadow: -15px 15px #f8fb05;
+  -webkit-box-shadow: -20px 20px #f8fb05;
+          box-shadow: -20px 20px #f8fb05;
 }
 
 /* gallery */
@@ -426,16 +426,41 @@ h1 {
 
 /* group and locations */
 .group, .locations {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #e0fddf;
 }
-.group .imgContainer,
-.group .textContainer, .locations .imgContainer,
-.locations .textContainer {
-  width: 40%;
-  border: 1px solid red;
+.group .wrapper, .locations .wrapper {
+  position: relative;
+}
+.group .wrapper .imgContainer,
+.group .wrapper .flexContainer, .locations .wrapper .imgContainer,
+.locations .wrapper .flexContainer {
+  width: 50%;
+}
+.group .wrapper .flexContainer, .locations .wrapper .flexContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.group .textContainer, .locations .textContainer {
+  width: 65%;
+  height: 438px;
+  padding-top: 30px;
+}
+.group .imgContainer, .locations .imgContainer {
+  position: absolute;
+}
+
+.group .flexContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.group .flexContainer .imgContainer {
+  top: 0;
+  left: 0;
 }
 
 /* style */

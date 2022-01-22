@@ -12,7 +12,7 @@
     }
     .imgContainer {
         .boxShadow {
-            box-shadow: -15px 15px $primary;
+            box-shadow: -20px 20px $primary;
         }
     }
 }
@@ -55,12 +55,37 @@
 
 /* group and locations */
 .group, .locations {
-    display: flex;
     background-color: $tertiary;
-    .imgContainer,
+    .wrapper {
+        position: relative;
+        .imgContainer,
+        .flexContainer {
+            width: 50%;
+            // border: 3px dotted darkgoldenrod;
+        }
+        .flexContainer {
+            justify-content: center;
+            align-items: center;
+        }
+    }
     .textContainer {
-        width: 40%;
-        border: $test;
+        width: 65%;
+        height: 438px;
+        padding-top: 30px;
+    }
+    .imgContainer {
+        position: absolute;
+    }
+}
+
+.group {
+    .flexContainer {
+        justify-content: end;
+        .imgContainer {
+            top: 0;
+            left: 0;
+            // box-shadow: 20px 20px $primary;
+        }
     }
 }
 
