@@ -402,6 +402,9 @@ h1 {
 }
 
 /* more */
+.more {
+  padding: 80px 0;
+}
 .more .flexContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -410,14 +413,15 @@ h1 {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 50%;
+  padding: 15px 0;
 }
 .more .icon {
-  width: 50%;
+  padding: 5px 20px 0px 10px;
 }
 .more .icon i {
   background-color: #f8fb05;
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* group and locations */
@@ -425,6 +429,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #e0fddf;
 }
 .group .imgContainer,
 .group .textContainer, .locations .imgContainer,
