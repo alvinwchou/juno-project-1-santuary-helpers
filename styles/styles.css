@@ -322,7 +322,7 @@ a {
 .button {
   background-color: #065635;
   display: inline-block;
-  margin-top: 6px;
+  margin: 20px 0;
   padding: 11px 22px 5px 22px;
 }
 
@@ -382,7 +382,7 @@ h1 {
 .discovering .textContainer {
   width: 65%;
 }
-.discovering .imgContainer {
+.discovering .imgContainer .boxShadow {
   -webkit-box-shadow: -15px 15px #f8fb05;
           box-shadow: -15px 15px #f8fb05;
 }
@@ -434,7 +434,8 @@ h1 {
 .group .imgContainer,
 .group .textContainer, .locations .imgContainer,
 .locations .textContainer {
-  width: 50%;
+  width: 40%;
+  border: 1px solid red;
 }
 
 /* style */
