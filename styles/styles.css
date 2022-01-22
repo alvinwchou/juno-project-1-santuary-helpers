@@ -449,7 +449,7 @@ h1 {
 }
 .group .textContainer, .locations .textContainer {
   width: 65%;
-  height: 438px;
+  height: clamp(100px, 437.13 / 1750 * 100vw, 437.13px);
   padding-top: 30px;
 }
 .group .imgContainer, .locations .imgContainer {
