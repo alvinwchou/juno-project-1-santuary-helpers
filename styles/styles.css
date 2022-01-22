@@ -357,6 +357,9 @@ nav ul {
 nav ul li {
   padding-top: 35px;
 }
+nav ul li a:hover {
+  border-bottom: 5px solid #f8fb05;
+}
 
 h1 {
   width: 50%;

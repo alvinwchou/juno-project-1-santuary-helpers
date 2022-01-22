@@ -20,6 +20,9 @@ nav {
         width: 475px; 
         li {
             padding-top: 35px;
+            a:hover {
+                border-bottom: 5px solid $primary;
+            }
         }
     }
 }
