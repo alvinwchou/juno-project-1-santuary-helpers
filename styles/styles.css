@@ -464,8 +464,24 @@ h1 {
 }
 
 /* style */
-.style {
-  text-align: center;
+.style .flexContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.style .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  padding: 170px 0;
 }
 
 /* footer */
@@ -475,6 +491,7 @@ footer {
 }
 footer p {
   color: #fff;
+  padding: 5px 0;
 }
 
 /* _footer.scss */
