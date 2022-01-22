@@ -1,10 +1,17 @@
 /* main */
 /* _sections.scss */
-
+.wrapper {border: 1px solid red;}
 /* discovering */
 .discovering {
+    padding: 74px 0 118px 0;
+    .flexContainer {
+        justify-content: space-between;
+    }
     .textContainer {
-        width: 75%;
+        width: 65%;
+    }
+    .imgContainer {
+        box-shadow: -15px 15px $primary;
     }
 }
 
@@ -12,10 +19,11 @@
 /* gallery */
 .gallery {
     background-color: $tertiary;
-    .wrapper {
+    padding: 100px 0;
+    .flexContainer {
         justify-content: space-between;
         .imgContainer {
-            width: 30%;
+            width: 31%;
         }
     }
 }
@@ -23,7 +31,7 @@
 
 /* more */
 .more {
-    .wrapper {
+    .flexContainer {
         flex-wrap: wrap;
     }
     .flexContainer {

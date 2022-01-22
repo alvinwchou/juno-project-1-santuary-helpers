@@ -5,14 +5,9 @@ header {
     background-repeat: no-repeat;
     background-position: top center;
     // background-size: 100%;
-    height: 200vh;
-    .wrapper {
-        display: block;
+    .imgContainer {
+        width: 55%;
     }
-}
-
-.wrapper {
-    border: 1px solid red;
 }
 
 nav {
@@ -23,7 +18,6 @@ nav {
         display: flex;
         justify-content: space-between;
         width: 475px; 
-        border: $test;
         li {
             padding-top: 35px;
         }
@@ -35,5 +29,3 @@ h1 {
     padding-top: 14px;
     margin-left: 134px;
 }
-
-
