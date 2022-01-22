@@ -464,6 +464,15 @@ h1 {
 .group .flexContainer .imgContainer {
   top: 0;
   left: 0;
+  -webkit-box-shadow: 20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05;
+}
+
+.locations .imgContainer {
+  top: 0;
+  right: 0;
+  -webkit-box-shadow: -20px 20px #f8fb05;
+          box-shadow: -20px 20px #f8fb05;
 }
 
 /* style */

@@ -84,8 +84,16 @@
         .imgContainer {
             top: 0;
             left: 0;
-            // box-shadow: 20px 20px $primary;
+            box-shadow: 20px 20px $primary;
         }
+    }
+}
+
+.locations {
+    .imgContainer {
+        top: 0;
+        right: 0;
+        box-shadow: -20px 20px $primary;
     }
 }
 
