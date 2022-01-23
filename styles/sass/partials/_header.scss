@@ -1,5 +1,5 @@
 /* _header.scss */
-$test: 1px solid red;
+
 header {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
@@ -21,7 +21,8 @@ nav {
         width: 475px; 
         li {
             padding-top: 35px;
-            a:hover {
+            a:hover,
+            a:focus {
                 border-bottom: 5px solid $primary;
             }
         }
