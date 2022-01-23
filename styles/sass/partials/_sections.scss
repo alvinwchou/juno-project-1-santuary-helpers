@@ -125,6 +125,47 @@
 
 }
 
+/* blog */
+.blogMain {
+    background-color: $tertiary;
+}
+
+.blogMainBar {
+    width: 60%;
+    .textContainer {
+        background-color: $solidWhite;
+        padding-left: 184px;
+        p {
+            padding-bottom: 32px;
+        }
+    }
+}
+
+.blogSidebar {
+    width: 40%;
+}
+
+
+/* comments */
+.comments {
+    .commentsContainer {
+        width: 60%;
+        padding: 50px 0;
+        border: 2px solid brown;
+    }
+    .imgContainer {
+        width: 15%;
+    }
+    .textContainer {
+        width: 85%;
+        padding: 0 5%;
+        p:first-child {
+            font-weight: 700;
+        }
+    }
+}
+
+
 /* footer */
 footer {
     background-color: $solidBlack;
