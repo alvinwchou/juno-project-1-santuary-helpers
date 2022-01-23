@@ -327,7 +327,15 @@ a {
   padding: 11px 22px 5px 22px;
 }
 
+.newLine {
+  display: block;
+}
+
 /* _header.scss */
+.wrapper {
+  border: 1px solid red;
+}
+
 header {
   background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
@@ -336,9 +344,9 @@ header {
   background-size: cover;
 }
 header .flexContainer {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 header .imgContainer {
   width: 55%;
@@ -374,6 +382,14 @@ h1 {
 .blogHeader {
   background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
   height: clamp(50px, 568 / 1600 * 100vw, 568px);
+}
+.blogHeader h2 {
+  width: 100%;
+}
+.blogHeader h1 {
+  width: 50%;
+  margin-left: 0;
+  border: 1px solid goldenrod;
 }
 
 /* main */
