@@ -6,19 +6,20 @@ header {
     background-position: top center;
     height: clamp(50px, 755 / 1600 * 100vw, 755px);
     background-size: cover;
+    .flexContainer {
+        justify-content: end;
+    }
     .imgContainer {
         width: 55%;
     }
 }
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: end;
+    width: 40%;
+    min-width: 475px;
     ul {
         display: flex;
         justify-content: space-between;
-        width: 475px; 
         li {
             padding-top: 35px;
             a:hover,
@@ -33,4 +34,11 @@ h1 {
     width: 50%;
     padding-top: 14px;
     margin-left: 134px;
+}
+
+/* blog header */
+
+.blogHeader {
+    background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
+    height: clamp(50px, 568 / 1600 * 100vw, 568px);
 }

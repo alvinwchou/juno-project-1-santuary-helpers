@@ -335,18 +335,18 @@ header {
   height: clamp(50px, 755 / 1600 * 100vw, 755px);
   background-size: cover;
 }
+header .flexContainer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
 header .imgContainer {
   width: 55%;
 }
 
 nav {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  width: 40%;
+  min-width: 475px;
 }
 nav ul {
   display: -webkit-box;
@@ -355,7 +355,6 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 475px;
 }
 nav ul li {
   padding-top: 35px;
@@ -369,6 +368,12 @@ h1 {
   width: 50%;
   padding-top: 14px;
   margin-left: 134px;
+}
+
+/* blog header */
+.blogHeader {
+  background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
+  height: clamp(50px, 568 / 1600 * 100vw, 568px);
 }
 
 /* main */
