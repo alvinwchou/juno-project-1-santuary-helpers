@@ -250,7 +250,7 @@ h2 {
   text-transform: uppercase;
 }
 
-i {
+h3 {
   font-family: "Kumar One", cursive;
   font-weight: 400;
   font-size: 1.1rem;
@@ -283,6 +283,10 @@ p {
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+i {
+  font-size: 1.5rem;
 }
 
 /* _baseStyles.scss */
@@ -331,6 +335,60 @@ a {
   display: block;
 }
 
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #000;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #000;
+  opacity: 1;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+input {
+  width: 47.5%;
+  border: none;
+  border-bottom: 2px solid #065635;
+}
+
+textarea {
+  border: 2px solid #065635;
+}
+
+button {
+  border: none;
+}
+
 /* _header.scss */
 .wrapper {
   border: 1px solid red;
@@ -344,9 +402,9 @@ header {
   background-size: cover;
 }
 header .flexContainer {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 header .imgContainer {
   width: 55%;
@@ -383,7 +441,12 @@ h1 {
   background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
   height: clamp(50px, 568 / 1600 * 100vw, 568px);
 }
-.blogHeader h2 {
+.blogHeader .flexContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogHeader .flexContainer h2 {
   width: 100%;
 }
 .blogHeader h1 {
@@ -570,6 +633,32 @@ h1 {
 }
 .comments .textContainer p:first-child {
   font-weight: 700;
+}
+
+/* postComment */
+.postComment {
+  padding-bottom: 100px;
+}
+
+form {
+  width: 60%;
+}
+form.flexContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form.flexContainer .flexContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input,
+form textarea {
+  padding: 35px 10px 35px 50px;
+  margin-bottom: 40px;
+  background-color: #e0fddf;
 }
 
 /* footer */

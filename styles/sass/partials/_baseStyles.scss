@@ -43,3 +43,29 @@ a {
 .newLine {
     display: block;
 }
+
+input, textarea {
+    // font-family: ;
+    &::placeholder {
+        color: $solidBlack;
+        opacity: 1;
+        line-height: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+    }
+}
+
+
+input {
+    width: 47.5%;
+    border: none;
+    border-bottom: 2px solid $secondary;
+}
+
+textarea {
+    border: 2px solid $secondary;
+}
+
+button {
+    border: none;
+}

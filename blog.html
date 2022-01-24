@@ -12,7 +12,7 @@
     <header class="blogHeader">
         <div class="wrapper">
             <div class="flexContainer">
-                <h2>Sanctuary <span class="newLine">Helpers</span></h2>
+                <h3>Sanctuary <span class="newLine">Helpers</span></h3>
                 <!-- START nav START -->
                 <nav>
                     <ul>
@@ -105,16 +105,17 @@
         <!-- START postComment START -->
         <section class="postComment" id="postComment">
             <div class="wrapper">
-                <form action="">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Name">
+                <form action="" class="flexContainer">
+                    <div class="flexContainer">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="emai" placeholder="Email address">
+                    </div><!-- END flexConatiner END -->
+                    <label for="comment" class="sr-only">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Comment"></textarea>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="emai" placeholder="Email">
-
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-
-                    <button>Post Comment</button>
+                    <button class="button">Post Comment</button>
                 </form>
             </div><!-- END wrapper END -->
         </section><!-- END  postComment END -->
