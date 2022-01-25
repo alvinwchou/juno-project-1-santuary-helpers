@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c504a2a4c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Sanctuary Helpers - Contact Us</title>
 </head>
@@ -12,7 +13,7 @@
     <header class="blogHeader">
         <div class="wrapper">
             <div class="flexContainer">
-                <h3>Get in touch</h3>
+                <h3>Sanctuary <span class="newLine">Helpers</span></h3>
                 <!-- START nav START -->
                 <nav>
                     <ul>
@@ -24,13 +25,68 @@
                 </nav>
             </div><!-- END flexContainer END -->
     
-            <h1>Blog</h1>
+            <h1>Get in touch</h1>
         </div><!-- END wrapper END -->
     </header>
 
 
     <!-- START main START -->
     <main class="contactMain" id="contactMain">
+        <!-- START sendMessage START -->
+        <section class="sendMessage" id="sendMessage">
+            <div class="wrapper">
+                <form action="" class="flexContainer">
+                    <div class="flexContainer">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                        <label for="email" class="sr-only">Email address</label>
+                        <input type="email" id="emai" placeholder="Email address">
+                    </div><!-- END flexConatiner END -->
+                    <label for="comment" class="sr-only">Message</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5" placeholder="Message"></textarea>
+        
+                    <button class="button">Submit</button>
+                </form>
+
+                <!-- START contactInfo START -->
+                <section class="contactInfo" id="contactInfo">
+                    <!-- START socialIcon START-->
+                    <div class="socialIcon">
+                        <a href="#">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Facebook</span>
+                        </a>
+
+
+                        <a href="#">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Instagram</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Twitter</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">Link to Whatsapp</span>
+                        </a>
+                    </div><!-- END socialIcon END-->
+
+                    <p>info@email.com</p>
+
+                    <!-- START address START -->
+                    <div class="address">
+                        <p>123 - 456 - 7980</p>
+                        <p>123 Quees Street West,</p>
+                        <p>Unit 10</p>
+                        <p>Toronto, Ontario</p>
+                        <p>M5V2D5</p>
+                    </div><!-- END address END -->
+                </section><!-- END contactInfo END -->
+            </div><!-- END wrapper END -->
+        </section><!-- END  sendMessage END -->
 
     </main>
 
