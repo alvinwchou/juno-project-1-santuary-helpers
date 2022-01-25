@@ -679,26 +679,68 @@ h1 {
 .postComment {
   padding-bottom: 100px;
 }
-
-form {
+.postComment form {
   width: 60%;
 }
-form.flexContainer {
+.postComment form.flexContainer {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-form.flexContainer .flexContainer {
+.postComment form.flexContainer .flexContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-form input,
-form textarea {
+.postComment form input,
+.postComment form textarea {
   padding: 35px 10px 35px 50px;
   margin-bottom: 40px;
   background-color: #e0fddf;
+}
+
+/* sendMessage */
+.sendMessage {
+  background-color: #e0fddf;
+  position: relative;
+}
+.sendMessage form {
+  width: 1100px;
+  background-color: #fff;
+  padding: 50px 75px;
+  -webkit-box-shadow: 20px 20px #f8fb05;
+          box-shadow: 20px 20px #f8fb05;
+  position: absolute;
+  left: -1000px;
+}
+.sendMessage form.flexContainer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sendMessage form.flexContainer .flexContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sendMessage form input,
+.sendMessage form textarea {
+  padding: 35px 10px 35px 50px;
+  margin-bottom: 40px;
+}
+.sendMessage .fullWidth {
+  width: 100%;
+  height: 600px;
+}
+.sendMessage .contactInfo {
+  float: right;
+  padding-top: 100px;
+}
+.sendMessage .contactInfo i {
+  color: #065635;
+  padding-right: 5px;
 }
 
 /* footer */
