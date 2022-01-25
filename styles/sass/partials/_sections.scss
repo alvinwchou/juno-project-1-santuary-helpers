@@ -129,12 +129,24 @@
 .blogMain {
     background-color: $tertiary;
 }
-
+.blog {
+        height: 1550px;
+        position: relative;
+}
 .blogMainBar {
-    width: 60%;
+    width: 960px;
+    position: absolute;
+    top: -150px;
+    .imgContainer {
+        box-shadow: 10 10 $primary;
+        box-shadow: -20px 20px $primary, 20px 20px $primary;
+        margin-bottom: 25px;
+
+    }
     .textContainer {
         background-color: $solidWhite;
         padding-left: 184px;
+        box-shadow: 20px 10px $primary, 20px -20px $primary, -20px 10px $primary;
         p {
             padding-bottom: 32px;
         }
@@ -142,7 +154,31 @@
 }
 
 .blogSidebar {
-    width: 40%;
+    width: 100%;
+    position: relative;
+    .boxShadow {
+        width: 26%;
+        box-shadow: -20px 20px $primary, 20px 20px $primary;
+        position: absolute;
+        top: 150px;
+        right: 0;
+        > div {
+            background-color: $primary;
+            > div {
+                padding: 20px 30px 20px 0px;
+            }
+        }
+    }
+    ul {
+        list-style: outside;
+        padding-left: 25px;
+        li {
+            padding-left: 15px;
+            a {
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 
@@ -151,7 +187,6 @@
     .commentsContainer {
         width: 60%;
         padding: 50px 0;
-        border: 2px solid brown;
     }
     .imgContainer {
         width: 15%;
@@ -169,6 +204,7 @@
 .postComment {
     padding-bottom: 100px;
 }
+
 form {
     width: 60%;
     &.flexContainer {

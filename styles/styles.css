@@ -603,26 +603,66 @@ h1 {
   background-color: #e0fddf;
 }
 
+.blog {
+  height: 1550px;
+  position: relative;
+}
+
 .blogMainBar {
-  width: 60%;
+  width: 960px;
+  position: absolute;
+  top: -150px;
+}
+.blogMainBar .imgContainer {
+  -webkit-box-shadow: 10 10 #f8fb05;
+          box-shadow: 10 10 #f8fb05;
+  -webkit-box-shadow: -20px 20px #f8fb05, 20px 20px #f8fb05;
+          box-shadow: -20px 20px #f8fb05, 20px 20px #f8fb05;
+  margin-bottom: 25px;
 }
 .blogMainBar .textContainer {
   background-color: #fff;
   padding-left: 184px;
+  -webkit-box-shadow: 20px 10px #f8fb05, 20px -20px #f8fb05, -20px 10px #f8fb05;
+          box-shadow: 20px 10px #f8fb05, 20px -20px #f8fb05, -20px 10px #f8fb05;
 }
 .blogMainBar .textContainer p {
   padding-bottom: 32px;
 }
 
 .blogSidebar {
-  width: 40%;
+  width: 100%;
+  position: relative;
+}
+.blogSidebar .boxShadow {
+  width: 26%;
+  -webkit-box-shadow: -20px 20px #f8fb05, 20px 20px #f8fb05;
+          box-shadow: -20px 20px #f8fb05, 20px 20px #f8fb05;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+.blogSidebar .boxShadow > div {
+  background-color: #f8fb05;
+}
+.blogSidebar .boxShadow > div > div {
+  padding: 20px 30px 20px 0px;
+}
+.blogSidebar ul {
+  list-style: outside;
+  padding-left: 25px;
+}
+.blogSidebar ul li {
+  padding-left: 15px;
+}
+.blogSidebar ul li a {
+  font-weight: 400;
 }
 
 /* comments */
 .comments .commentsContainer {
   width: 60%;
   padding: 50px 0;
-  border: 2px solid brown;
 }
 .comments .imgContainer {
   width: 15%;
