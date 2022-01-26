@@ -450,7 +450,26 @@ h1 {
   width: 100%;
 }
 .blogHeader h1 {
-  width: 50%;
+  margin-left: 0;
+  border: 1px solid goldenrod;
+}
+
+/* contact header */
+.contactHeader {
+  background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
+  height: clamp(50px, 576 / 1600 * 100vw, 576px);
+}
+.contactHeader .flexContainer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contactHeader .flexContainer h2 {
+  width: 100%;
+}
+.contactHeader h1 {
+  width: 100%;
+  margin-top: 150px;
   margin-left: 0;
   border: 1px solid goldenrod;
 }
@@ -706,13 +725,13 @@ h1 {
   position: relative;
 }
 .sendMessage form {
-  width: 1100px;
+  width: 1000px;
   background-color: #fff;
   padding: 50px 75px;
   -webkit-box-shadow: 20px 20px #f8fb05;
           box-shadow: 20px 20px #f8fb05;
   position: absolute;
-  left: -1000px;
+  top: -100px;
 }
 .sendMessage form.flexContainer {
   -webkit-box-orient: vertical;
@@ -740,7 +759,10 @@ h1 {
 }
 .sendMessage .contactInfo i {
   color: #065635;
-  padding-right: 5px;
+  padding-right: 10px;
+}
+.sendMessage .contactInfo > p {
+  padding: 15px 0;
 }
 
 /* footer */
