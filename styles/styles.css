@@ -391,24 +391,27 @@ button {
 }
 
 /* _header.scss */
-.wrapper {
-  border: 1px solid red;
-}
-
 header {
   background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   height: clamp(50px, 755 / 1600 * 100vw, 755px);
   background-size: cover;
+  position: relative;
 }
 header .flexContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
-header .imgContainer {
-  width: 55%;
+header .headerBGContainer {
+  background-image: url(../sanctuary-helpers-final-images/header-box.png);
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: clamp(50px, 616 / 1600 * 100vw, 616px);
+  background-size: cover;
+  position: absolute;
+  top: clamp(10px, 297 / 1600 * 100vw, 1230px);
 }
 
 nav {
@@ -452,7 +455,6 @@ h1 {
 }
 .blogHeader h1 {
   margin-left: 0;
-  border: 1px solid goldenrod;
 }
 
 /* contact header */
@@ -472,14 +474,13 @@ h1 {
   width: 100%;
   margin-top: 150px;
   margin-left: 0;
-  border: 1px solid goldenrod;
 }
 
 /* main */
 /* _sections.scss */
 /* discovering */
 .discovering {
-  padding: 74px 0 118px 0;
+  padding: 200px 0 118px 0;
 }
 .discovering .flexContainer {
   -webkit-box-pack: justify;

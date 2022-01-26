@@ -1,16 +1,23 @@
 /* _header.scss */
-.wrapper {border:1px solid red}
+// .wrapper {border:1px solid red}
 header {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     height: clamp(50px, 755 / 1600 * 100vw, 755px);
     background-size: cover;
+    position: relative;
     .flexContainer {
         justify-content: end;
     }
-    .imgContainer {
-        width: 55%;
+    .headerBGContainer {
+        background-image: url(../sanctuary-helpers-final-images/header-box.png);
+        background-repeat: no-repeat;
+        width: 55vw;
+    height: clamp(50px, 616 / 1600 * 100vw, 616px);
+    background-size: cover;
+    position: absolute;
+    top: clamp(10px, 297 / 1600 * 100vw, 1230px);
     }
 }
 
@@ -49,7 +56,6 @@ h1 {
     }
     h1 {
         margin-left: 0;
-        border: 1px solid goldenrod;
     }
 }
 
@@ -67,6 +73,5 @@ h1 {
         width: 100%;
         margin-top: 150px;
         margin-left: 0;
-        border: 1px solid goldenrod;
     }
 }
