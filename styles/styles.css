@@ -256,6 +256,7 @@ h3 {
   font-size: 1.1rem;
   line-height: 24px;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 a {
@@ -523,16 +524,21 @@ h1 {
 }
 .more .icon {
   padding: 5px 20px 0px 10px;
+  text-align: center;
 }
 .more .icon i {
   background-color: #f8fb05;
   border-radius: 100px;
-  padding: 15px;
+  padding: 20px;
+  width: 70px;
+  height: 70px;
 }
 .more a {
   text-align: left;
+  position: relative;
 }
 .more a h2 {
+  padding-top: 12px;
   border-bottom: 5px solid transparent;
 }
 .more a:hover h2, .more a:focus h2 {
@@ -725,13 +731,13 @@ h1 {
   position: relative;
 }
 .sendMessage form {
-  width: 1000px;
+  width: 875px;
   background-color: #fff;
   padding: 50px 75px;
   -webkit-box-shadow: 20px 20px #f8fb05;
           box-shadow: 20px 20px #f8fb05;
   position: absolute;
-  top: -100px;
+  top: -160px;
 }
 .sendMessage form.flexContainer {
   -webkit-box-orient: vertical;
@@ -751,7 +757,7 @@ h1 {
 }
 .sendMessage .fullWidth {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 .sendMessage .contactInfo {
   float: right;
