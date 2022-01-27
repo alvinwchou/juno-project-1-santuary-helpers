@@ -886,9 +886,9 @@ footer p {
 }
 
 /* gallery */
-.gallery .imgContainer {
-  width: 100%;
+.gallery .flexContainer .imgContainer {
+  width: 45%;
 }
-.gallery .imgContainer:last-child {
+.gallery .flexContainer .imgContainer:last-child {
   display: none;
 }

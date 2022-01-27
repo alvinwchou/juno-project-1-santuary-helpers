@@ -79,10 +79,12 @@
 
 /* gallery */
 .gallery {
-    .imgContainer{
-        width: 100%;
-    }
-    .imgContainer:last-child {
-        display: none;
+    .flexContainer {
+        .imgContainer {
+            width: 45%;
+            &:last-child {
+                display: none;
+            }
+        }
     }
 }
