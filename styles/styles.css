@@ -867,11 +867,28 @@ footer p {
   }
 }
 @media (max-width: 1000px) {
-  .mainNav {
+  .header .mainNav {
     display: none;
   }
-
-  .mobileNav {
+  .header .mobileNav {
     display: block;
   }
+}
+/* discovering */
+.discovering .flexContainer {
+  display: block;
+}
+.discovering .flexContainer .textContainer {
+  width: 100%;
+}
+.discovering .flexContainer .imgContainer {
+  display: none;
+}
+
+/* gallery */
+.gallery .imgContainer {
+  width: 100%;
+}
+.gallery .imgContainer:last-child {
+  display: none;
 }
