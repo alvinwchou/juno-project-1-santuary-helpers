@@ -4,20 +4,24 @@ header {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    height: clamp(50px, 755 / 1600 * 100vw, 755px);
+    height: calc(755 / 1600 * 100vw);
     background-size: cover;
     position: relative;
     .flexContainer {
         justify-content: end;
+        h3 {
+            display: none;
+            padding-top: 30px;
+        }
     }
     .headerBGContainer {
         background-image: url(../sanctuary-helpers-final-images/header-box.png);
         background-repeat: no-repeat;
         width: 55vw;
-    height: clamp(50px, 616 / 1600 * 100vw, 616px);
+    height: calc(616 / 1600 * 100vw);
     background-size: cover;
     position: absolute;
-    top: clamp(10px, 297 / 1600 * 100vw, 1230px);
+    top: calc(297 / 1600 * 100vw);
     }
 }
 
@@ -47,11 +51,11 @@ h1 {
 
 .blogHeader {
     background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
-    height: clamp(50px, 568 / 1600 * 100vw, 568px);
+    height: calc(568 / 1600 * 100vw);
     .flexContainer {
         justify-content: space-between;
-        h2 {
-            width: 100%;
+        h3 {
+            display: block;
         }
     }
     h1 {
@@ -62,11 +66,12 @@ h1 {
 /* contact header */
 .contactHeader {
     background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
-    height: clamp(50px, 576 / 1600 * 100vw, 576px);
+    height: calc(576 / 1600 * 100vw);
+    // height: 576px;
     .flexContainer {
         justify-content: space-between;
-        h2 {
-            width: 100%;
+        h3 {
+            display: block;
         }
     }
     h1 {

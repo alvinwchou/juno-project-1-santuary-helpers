@@ -3,7 +3,7 @@
 
 /* discovering */
 .discovering {
-    padding: 200px 0 118px 0;
+    padding: clamp(50px, 12.5vw, 500px) 0 118px 0;
     .flexContainer {
         justify-content: space-between;
     }
@@ -73,7 +73,6 @@
 .group, .locations {
     background-color: $tertiary;
     .wrapper {
-        position: relative;
         .imgContainer,
         .flexContainer {
             width: 50%;
@@ -84,13 +83,14 @@
     }
     .textContainer {
         width: 65%;
-        height: clamp(100px, 437.13 / 1818.18 * 100vw, 437.13px);
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .imgContainer {
-        position: absolute;
+        position: relative;
+        
+
     }
 }
 
@@ -98,18 +98,22 @@
     .flexContainer {
         justify-content: end;
         .imgContainer {
-            top: -8%;
-            left: -8%;
+            top: -50px;
+            left: -50px;
+            .boxShadow{
             box-shadow: 20px 20px $primary;
+            }
         }
     }
 }
 
 .locations {
     .imgContainer {
-        top: 8%;
-        right: -8%;
-        box-shadow: -20px 20px $primary;
+        top: 50px;
+        right: -50px;
+        .boxShadow{
+            box-shadow: -20px 20px $primary;
+        }
     }
     .textContainer {
         text-align: right;
