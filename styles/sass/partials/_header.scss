@@ -4,7 +4,7 @@ header {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    height: calc(755 / 1600 * 100vw);
+    height: clamp(50px, 755 / 1600 * 100vw, 1000px);
     background-size: cover;
     position: relative;
     .flexContainer {
@@ -19,6 +19,7 @@ header {
         background-repeat: no-repeat;
         width: 55vw;
     height: calc(616 / 1600 * 100vw);
+    height: clamp(50px, 616 / 1600 * 100vw, 800px);
     background-size: cover;
     position: absolute;
     top: calc(297 / 1600 * 100vw);
@@ -45,7 +46,7 @@ header {
     padding-top: 0px;
     display: none;
     label {
-        padding: 0 48.75px;
+        padding: 0 27.5px 0 70px;
     }
     li {
         padding: 5px 10px;
@@ -77,7 +78,8 @@ h1 {
 
 .blogHeader {
     background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
-    height: calc(568 / 1600 * 100vw);
+    // height: calc(568 / 1600 * 100vw);
+    height: clamp(10px, 568 / 1600 * 100vw, 1000px);
     .flexContainer {
         justify-content: space-between;
         h3 {
@@ -92,7 +94,7 @@ h1 {
 /* contact header */
 .contactHeader {
     background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
-    height: calc(576 / 1600 * 100vw);
+    height: clamp(50px, 576 / 1600 * 100vw, 1000px);
     // height: 576px;
     .flexContainer {
         justify-content: space-between;

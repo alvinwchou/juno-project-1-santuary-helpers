@@ -22,10 +22,10 @@
 /* gallery */
 .gallery {
     background-color: $tertiary;
-    padding: 100px 0;
     .flexContainer {
         justify-content: space-between;
         .imgContainer {
+            padding: 100px 0;
             width: 31%;
         }
     }

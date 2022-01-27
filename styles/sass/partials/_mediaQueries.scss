@@ -52,7 +52,7 @@
 
 
 @media (max-width: 1000px) {
-    .header {
+    header {
         .mainNav {
             display: none;
         }
@@ -60,7 +60,7 @@
             display: block;
         }
     }
-}
+
 
 /* discovering */
 .discovering {
@@ -78,12 +78,28 @@
 
 
 /* gallery */
-.gallery {
-    .flexContainer {
-        .imgContainer {
-            width: 45%;
-            &:last-child {
-                display: none;
+    .gallery {
+        .flexContainer {
+            .imgContainer {
+                width: 45%;
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery {
+        .flexContainer {
+            flex-direction: column;
+            .imgContainer {
+                width: 100%;
+                padding: 30px;
+                &:last-child {
+                    display: block;
+                }
             }
         }
     }
