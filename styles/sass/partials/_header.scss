@@ -11,7 +11,7 @@ header {
         justify-content: end;
         h3 {
             display: none;
-            padding-top: 30px;
+            padding-top: 20px;
         }
     }
     .headerBGContainer {
@@ -25,18 +25,44 @@ header {
     }
 }
 
-nav {
+.mainNav {
     width: 40%;
     min-width: 475px;
     ul {
         display: flex;
         justify-content: space-between;
+        padding-top: 35px;
         li {
-            padding-top: 35px;
             a:hover,
             a:focus {
                 border-bottom: 5px solid $primary;
             }
+        }
+    }
+}
+
+.mobileNav {
+    padding-top: 0px;
+    display: none;
+    label {
+        padding: 0 48.75px;
+    }
+    li {
+        padding: 5px 10px;
+        background-color: rgba(255, 255, 255, 0.4); 
+        a:hover,
+        a:focus {
+            border-bottom: 5px solid $primary;
+        }
+    }
+    .dropdownMenu {
+        display: none;
+    }
+    [type=checkbox] {
+        opacity: 0;
+        display: absolute;
+        &:checked ~ .dropdownMenu {
+            display: block;
         }
     }
 }

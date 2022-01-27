@@ -406,7 +406,7 @@ header .flexContainer {
 }
 header .flexContainer h3 {
   display: none;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 header .headerBGContainer {
   background-image: url(../sanctuary-helpers-final-images/header-box.png);
@@ -418,24 +418,48 @@ header .headerBGContainer {
   top: calc(297 / 1600 * 100vw);
 }
 
-nav {
+.mainNav {
   width: 40%;
   min-width: 475px;
 }
-nav ul {
+.mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-nav ul li {
   padding-top: 35px;
 }
-nav ul li a:hover,
-nav ul li a:focus {
+.mainNav ul li a:hover,
+.mainNav ul li a:focus {
   border-bottom: 5px solid #f8fb05;
+}
+
+.mobileNav {
+  padding-top: 0px;
+  display: none;
+}
+.mobileNav label {
+  padding: 0 48.75px;
+}
+.mobileNav li {
+  padding: 5px 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.mobileNav li a:hover,
+.mobileNav li a:focus {
+  border-bottom: 5px solid #f8fb05;
+}
+.mobileNav .dropdownMenu {
+  display: none;
+}
+.mobileNav [type=checkbox] {
+  opacity: 0;
+  display: absolute;
+}
+.mobileNav [type=checkbox]:checked ~ .dropdownMenu {
+  display: block;
 }
 
 h1 {
@@ -492,7 +516,7 @@ h1 {
           justify-content: space-between;
 }
 .discovering .textContainer {
-  width: 63%;
+  width: 62%;
 }
 .discovering .imgContainer {
   width: 35%;
@@ -805,7 +829,6 @@ footer p {
     display: none;
   }
 
-  /* discovering */
   /* more */
   .more .flexContainer .flexContainer {
     width: 100%;
@@ -841,5 +864,14 @@ footer p {
   }
   .locations .textContainer {
     text-align: left;
+  }
+}
+@media (max-width: 1000px) {
+  .mainNav {
+    display: none;
+  }
+
+  .mobileNav {
+    display: block;
   }
 }
