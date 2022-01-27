@@ -3,14 +3,15 @@
 
 /* discovering */
 .discovering {
-    padding: clamp(50px, 12.5vw, 500px) 0 118px 0;
+    padding: calc(12.5vw) 0 118px 0;
     .flexContainer {
         justify-content: space-between;
     }
     .textContainer {
-        width: 65%;
+        width: 63%;
     }
     .imgContainer {
+        width: 35%;
         .boxShadow {
             box-shadow: -20px 20px $primary;
         }

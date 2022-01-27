@@ -484,7 +484,7 @@ h1 {
 /* _sections.scss */
 /* discovering */
 .discovering {
-  padding: clamp(50px, 12.5vw, 500px) 0 118px 0;
+  padding: calc(12.5vw) 0 118px 0;
 }
 .discovering .flexContainer {
   -webkit-box-pack: justify;
@@ -492,7 +492,10 @@ h1 {
           justify-content: space-between;
 }
 .discovering .textContainer {
-  width: 65%;
+  width: 63%;
+}
+.discovering .imgContainer {
+  width: 35%;
 }
 .discovering .imgContainer .boxShadow {
   -webkit-box-shadow: -20px 20px #f8fb05;
@@ -789,6 +792,7 @@ footer p {
 /* _footer.scss */
 /* _mediaQueries.scss */
 @media (max-width: 1350px) {
+  /* header */
   header .flexContainer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -799,5 +803,43 @@ footer p {
   }
   header h1 {
     display: none;
+  }
+
+  /* discovering */
+  /* more */
+  .more .flexContainer .flexContainer {
+    width: 100%;
+  }
+
+  /* group and locations */
+  .group, .locations {
+    padding: 50px 0;
+  }
+  .group .wrapper, .locations .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .group .wrapper .imgContainer,
+.group .wrapper .flexContainer, .locations .wrapper .imgContainer,
+.locations .wrapper .flexContainer {
+    width: 100%;
+  }
+  .group .wrapper .imgContainer, .locations .wrapper .imgContainer {
+    position: static;
+  }
+  .group .wrapper .textContainer, .locations .wrapper .textContainer {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .locations .wrapper .flexContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .locations .textContainer {
+    text-align: left;
   }
 }

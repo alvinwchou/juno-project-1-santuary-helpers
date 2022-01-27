@@ -1,6 +1,7 @@
 /* _mediaQueries.scss */
 
 @media (max-width: 1350px) { 
+    /* header */
     header {
         .flexContainer {
             justify-content: space-between;
@@ -13,11 +14,45 @@
         }
     }
 
+    /* discovering */
+
+
+    /* more */
+    .more .flexContainer .flexContainer {
+        width: 100%;
+    }
 
 
 
 
+    /* group and locations */
+    .group, .locations {
+        padding: 50px 0;
+        .wrapper {
+            flex-direction: column;
+            .imgContainer,
+            .flexContainer {
+                width: 100%;
+            }
+            .imgContainer {
+                position: static;
+            }
+            .textContainer {
+                width: 100%;
+                padding-top: 50px;
+            }
+        }
+    }
+
+    .locations {
+        .wrapper .flexContainer {
+            order: 2;
+        }
+        .textContainer {
+            text-align: left;
+        }
+    }
 
 
-    
+
 }
