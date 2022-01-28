@@ -330,6 +330,17 @@ a {
   display: inline-block;
   margin: 20px 0;
   padding: 11px 22px 5px 22px;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e0fddf;
+  color: #065635;
+  border: 1px solid #065635;
 }
 
 .newLine {
@@ -379,6 +390,7 @@ input::placeholder, textarea::placeholder {
 input {
   width: 47.5%;
   border: none;
+  border: 2px solid transparent;
   border-bottom: 2px solid #065635;
 }
 
@@ -403,6 +415,13 @@ header .flexContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+header .flexContainer a {
+  border: 1px solid transparent;
+}
+header .flexContainer a:hover,
+header .flexContainer a:focus {
+  border: 1px dotted #065635;
 }
 header .flexContainer h3 {
   display: none;
@@ -440,6 +459,9 @@ header .headerBGContainer {
 .mobileNav {
   padding-top: 0px;
   display: none;
+}
+.mobileNav [type=checkbox]:focus + label {
+  border: 1px dotted #065635;
 }
 .mobileNav label {
   padding: 0 27.5px 0 70px;
@@ -525,6 +547,10 @@ h1 {
 .discovering .imgContainer .boxShadow {
   -webkit-box-shadow: -20px 20px #f8fb05;
           box-shadow: -20px 20px #f8fb05;
+}
+.discovering .button:hover,
+.discovering .button:focus {
+  background-color: #fff;
 }
 
 /* gallery */
@@ -649,6 +675,10 @@ h1 {
   width: 80%;
   padding: 170px 0;
 }
+.style .button:hover,
+.style .button:focus {
+  background-color: #fff;
+}
 
 /* blog */
 .blogMain {
@@ -707,6 +737,11 @@ h1 {
 .blogSidebar a {
   font-weight: 400;
   text-transform: none;
+}
+.blogSidebar a:hover,
+.blogSidebar a:focus {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* comments */
@@ -779,6 +814,10 @@ h1 {
   padding: 35px 10px 35px 50px;
   margin-bottom: 40px;
 }
+.sendMessage .button:hover,
+.sendMessage .button:focus {
+  background-color: #fff;
+}
 .sendMessage .contactInfo {
   width: 50%;
   -webkit-box-orient: vertical;
@@ -797,9 +836,23 @@ h1 {
   color: #065635;
   padding-right: 10px;
 }
+.sendMessage .contactInfo i:hover,
+.sendMessage .contactInfo i:focus {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
 .sendMessage .contactInfo > p {
   padding: 15px 0;
   width: 252px;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border: 2px dotted #065635;
+  font-weight: 700;
 }
 
 /* footer */

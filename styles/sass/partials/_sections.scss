@@ -16,6 +16,10 @@
             box-shadow: -20px 20px $primary;
         }
     }
+    .button:hover,
+    .button:focus {
+        background-color: $solidWhite;
+    }
 }
 
 
@@ -129,7 +133,10 @@
         width: 80%;
         padding: 170px 0;
     }
-
+    .button:hover,
+    .button:focus {
+        background-color: $solidWhite;
+    }
 }
 
 /* blog */
@@ -184,6 +191,11 @@
     a {
         font-weight: 400;
         text-transform: none;
+    }
+    a:hover,
+    a:focus {
+        font-weight: 700;
+        text-transform: uppercase;
     }
 }
 
@@ -248,6 +260,10 @@
             margin-bottom: 40px;
         }
     }
+    .button:hover,
+    .button:focus {
+        background-color: $solidWhite;
+    }
     .contactInfo {
         width: 50%;
         flex-direction: column;
@@ -260,13 +276,25 @@
             color: $secondary;
             padding-right: 10px;
         }
+        i:hover,
+        i:focus {
+            transform: scale(2);
+        }
         > p {
             padding: 15px 0;
             width: 252px
         }
+
     }
 }
-
+    input:hover,
+    input:focus,
+    textarea:hover,
+    textarea:focus {
+        outline: none;
+        border: 2px dotted $secondary;
+        font-weight: 700;
+    }
 
 
 /* footer */

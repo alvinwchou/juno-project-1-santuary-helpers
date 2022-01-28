@@ -9,6 +9,13 @@ header {
     position: relative;
     .flexContainer {
         justify-content: end;
+        a {
+            border: 1px solid transparent;
+        }
+        a:hover,
+        a:focus  {
+            border: 1px dotted $secondary;
+        }
         h3 {
             display: none;
             padding-top: 20px;
@@ -45,6 +52,9 @@ header {
 .mobileNav {
     padding-top: 0px;
     display: none;
+    [type=checkbox]:focus + label {
+        border: 1px dotted $secondary;
+    }
     label {
         padding: 0 27.5px 0 70px;
     }
