@@ -555,23 +555,17 @@ h1 {
   width: 50%;
   padding: 15px 0;
 }
-.more .icon {
-  padding: 5px 20px 0px 10px;
-  text-align: center;
+.more .fa-stack {
+  color: #f8fb05;
 }
-.more .icon i {
-  background-color: #f8fb05;
-  border-radius: 100px;
-  padding: 20px;
-  width: 70px;
-  height: 70px;
+.more .fa-stack .fa-stack-1x {
+  color: #000;
 }
 .more a {
   text-align: left;
-  position: relative;
 }
 .more a h2 {
-  padding-top: 12px;
+  padding-top: 16px;
   border-bottom: 5px solid transparent;
 }
 .more a:hover h2, .more a:focus h2 {

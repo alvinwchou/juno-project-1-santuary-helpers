@@ -44,22 +44,18 @@
         }
     }
     
-    .icon {
-        padding: 5px 20px 0px 10px;
-        text-align: center;
-        i {
-            background-color: $primary;
-            border-radius: 100px;
-            padding: 20px;
-            width: 70px;
-            height: 70px;
+
+    .fa-stack {
+        color: $primary;
+        .fa-stack-1x {
+            color: $solidBlack;
         }
     }
+
     a {
         text-align: left;
-        position: relative;
         h2 {
-            padding-top: 12px;
+            padding-top: 16px;
             border-bottom: 5px solid transparent;
         }
         &:hover h2,
