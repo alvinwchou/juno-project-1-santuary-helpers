@@ -656,7 +656,7 @@ h1 {
 }
 
 .blogMainBar {
-  width: 2000px;
+  width: 60vw;
   position: relative;
   top: -150px;
 }
@@ -680,11 +680,11 @@ h1 {
 }
 
 .blogSidebar {
-  width: 100%;
+  width: 40vw;
   position: relative;
 }
 .blogSidebar .boxShadow {
-  width: 400px;
+  width: 60%;
   -webkit-box-shadow: -20px 40px 0 20px #f8fb05;
           box-shadow: -20px 40px 0 20px #f8fb05;
   position: absolute;
@@ -704,8 +704,9 @@ h1 {
 .blogSidebar ul li {
   padding-left: 15px;
 }
-.blogSidebar ul li a {
+.blogSidebar a {
   font-weight: 400;
+  text-transform: none;
 }
 
 /* comments */

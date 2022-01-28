@@ -137,7 +137,7 @@
     background-color: $tertiary;
 }
 .blogMainBar {
-    width: 2000px;
+    width: 60vw;
     position: relative;
     top: -150px;
     .imgContainer {
@@ -159,10 +159,10 @@
 }
 
 .blogSidebar {
-    width: 100%;
+    width: 40vw;
     position: relative;
     .boxShadow {
-        width: 400px;
+        width: 60%;
         box-shadow: -20px 40px 0 20px $primary;
         position: absolute;
         top: 150px;
@@ -179,10 +179,11 @@
         padding-left: 25px;
         li {
             padding-left: 15px;
-            a {
-                font-weight: 400;
-            }
         }
+    }
+    a {
+        font-weight: 400;
+        text-transform: none;
     }
 }
 
