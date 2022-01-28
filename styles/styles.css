@@ -925,8 +925,6 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 50px;
-    /* comments */
-    /* postComment */
   }
   .blog .blogMainBar {
     width: 77%;
@@ -965,10 +963,14 @@ footer p {
   .blog .blogSidebar .textContainer .ourMission, .blog .blogSidebar .textContainer .recentPost {
     width: 50%;
   }
-  .blog .comments .commentsContainer {
+
+  /* comments */
+  .comments .commentsContainer {
     width: 100%;
   }
-  .blog .postComment form {
+
+  /* postComment */
+  .postComment form {
     width: 100%;
   }
 
