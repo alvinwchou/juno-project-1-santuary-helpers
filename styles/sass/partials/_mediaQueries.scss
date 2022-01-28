@@ -86,20 +86,37 @@
             }
             
         }
-    }
-
-
-    /* comments */
-    .comments {
-        .commentsContainer {
-        width: 100%;
+        
+        /* comments */
+        .comments {
+            .commentsContainer {
+                width: 100%;
+            }
+        }
+        
+        /* postComment */
+        .postComment {
+            form {
+                width: 100%;
+            }
         }
     }
-
-    /* postComment */
-    .postComment {
-        form {
-            width: 100%;
+    
+    
+    
+    
+    /* contact */
+    .sendMessage {
+        >.flexContainer {
+            flex-direction: column;
+            .contactInfo {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 0;
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -160,6 +177,24 @@
             }
         }
     }
+
+
+     /* contact */
+    .sendMessage {
+        .flexContainer {
+            flex-direction: column;
+            padding-top: 50px;
+            form {
+                position: static;
+                input {
+                    width: 100%;
+                }
+            }
+        .contactInfo {
+            padding-top: 50px;
+        }
+        }
+    }
 }
 
 
@@ -176,6 +211,16 @@
                 padding-left: 20px;
             }
         }
+    }
+
+
+    /* contact */
+    .sendMessage {
+        .flexContainer {
+        .contactInfo {
+            flex-direction: column;
+        }
+    }
     }
 }
 

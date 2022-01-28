@@ -140,13 +140,8 @@
 .blogMain {
     background-color: $tertiary;
 }
-.blog {
-        // height: 1550px;
-        // position: relative;
-}
 .blogMainBar {
     width: 2000px;
-    // position: absolute;
     position: relative;
     top: -150px;
     .imgContainer {
@@ -237,13 +232,12 @@
 /* sendMessage */
 .sendMessage {
     background-color: $tertiary;
-    position: relative;
     form {
-        width: 875px;
+        width: 100%;
         background-color: $solidWhite;
         padding: 50px 75px;
         box-shadow: 20px 20px $primary;
-        position: absolute;
+        position: relative;
         top: -160px;;
         &.flexContainer {
             flex-direction: column;
@@ -257,19 +251,21 @@
             margin-bottom: 40px;
         }
     }
-    .fullWidth {
-        width: 100%;
-        height: 500px;
-    }
     .contactInfo {
-        float: right;
+        width: 50%;
+        flex-direction: column;
+        align-items: end;
         padding-top: 100px;
+        .socialIcon {
+            width: 252px
+        }
         i {
             color: $secondary;
             padding-right: 10px;
         }
         > p {
             padding: 15px 0;
+            width: 252px
         }
     }
 }

@@ -758,15 +758,14 @@ h1 {
 /* sendMessage */
 .sendMessage {
   background-color: #e0fddf;
-  position: relative;
 }
 .sendMessage form {
-  width: 875px;
+  width: 100%;
   background-color: #fff;
   padding: 50px 75px;
   -webkit-box-shadow: 20px 20px #f8fb05;
           box-shadow: 20px 20px #f8fb05;
-  position: absolute;
+  position: relative;
   top: -160px;
 }
 .sendMessage form.flexContainer {
@@ -785,13 +784,19 @@ h1 {
   padding: 35px 10px 35px 50px;
   margin-bottom: 40px;
 }
-.sendMessage .fullWidth {
-  width: 100%;
-  height: 500px;
-}
 .sendMessage .contactInfo {
-  float: right;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   padding-top: 100px;
+}
+.sendMessage .contactInfo .socialIcon {
+  width: 252px;
 }
 .sendMessage .contactInfo i {
   color: #065635;
@@ -799,6 +804,7 @@ h1 {
 }
 .sendMessage .contactInfo > p {
   padding: 15px 0;
+  width: 252px;
 }
 
 /* footer */
@@ -871,6 +877,8 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-bottom: 50px;
+    /* comments */
+    /* postComment */
   }
   .blog .blogMainBar {
     width: 77%;
@@ -909,15 +917,34 @@ footer p {
   .blog .blogSidebar .textContainer .ourMission, .blog .blogSidebar .textContainer .recentPost {
     width: 50%;
   }
-
-  /* comments */
-  .comments .commentsContainer {
+  .blog .comments .commentsContainer {
+    width: 100%;
+  }
+  .blog .postComment form {
     width: 100%;
   }
 
-  /* postComment */
-  .postComment form {
+  /* contact */
+  .sendMessage > .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sendMessage > .flexContainer .contactInfo {
     width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 0;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 1000px) {
@@ -956,6 +983,24 @@ footer p {
   .blog .blogSidebar .textContainer .ourMission, .blog .blogSidebar .textContainer .recentPost {
     width: 100%;
   }
+
+  /* contact */
+  .sendMessage .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+  .sendMessage .flexContainer form {
+    position: static;
+  }
+  .sendMessage .flexContainer form input {
+    width: 100%;
+  }
+  .sendMessage .flexContainer .contactInfo {
+    padding-top: 50px;
+  }
 }
 @media (max-width: 800px) {
   .blog .blogSidebar .boxShadow {
@@ -969,6 +1014,14 @@ footer p {
   }
   .blog .blogSidebar .textContainer {
     padding-left: 20px;
+  }
+
+  /* contact */
+  .sendMessage .flexContainer .contactInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 500px) {
