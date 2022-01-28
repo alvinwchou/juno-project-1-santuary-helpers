@@ -141,23 +141,26 @@
     background-color: $tertiary;
 }
 .blog {
-        height: 1550px;
-        position: relative;
+        // height: 1550px;
+        // position: relative;
 }
 .blogMainBar {
-    width: 960px;
-    position: absolute;
+    width: 2000px;
+    // position: absolute;
+    position: relative;
     top: -150px;
     .imgContainer {
+        position: relative;
+        top: 30px;
         box-shadow: 10 10 $primary;
-        box-shadow: -20px 20px $primary, 20px 20px $primary;
+        box-shadow: 20px 20px $primary;
         margin-bottom: 25px;
 
     }
     .textContainer {
         background-color: $solidWhite;
-        padding-left: 184px;
-        box-shadow: 20px 10px $primary, 20px -20px $primary, -20px 10px $primary;
+        padding: 50px 0 0 184px;
+        box-shadow: 10px 20px 0 10px $primary;
         p {
             padding-bottom: 32px;
         }
@@ -168,8 +171,8 @@
     width: 100%;
     position: relative;
     .boxShadow {
-        width: 26%;
-        box-shadow: -20px 20px $primary, 20px 20px $primary;
+        width: 400px;
+        box-shadow: -20px 40px 0 20px $primary;
         position: absolute;
         top: 150px;
         right: 0;

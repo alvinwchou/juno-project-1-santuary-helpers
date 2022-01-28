@@ -46,6 +46,62 @@
             text-align: left;
         }
     }
+
+
+    /* blong */
+    .blog {
+        flex-direction: column;
+        padding-bottom: 50px;
+        .blogMainBar {
+            width: 77%;
+            margin: 0 auto;
+            position: static;
+            .textContainer {
+                padding: 40px 10vw;
+                
+            }
+        }
+        .blogSidebar {
+            background-color: $primary;
+            width: 77%;
+            margin: 0 auto;
+            .boxShadow {
+                position: static;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                box-shadow: 20px 0 $primary;
+                .imgContainer {
+                    width: 100%;
+                    padding-right: 40px;
+                }
+
+            }
+            .textContainer {
+                display: flex;
+                .ourMission, .recentPost {
+                    width: 50%;
+
+                }
+            }
+            
+        }
+    }
+
+
+    /* comments */
+    .comments {
+        .commentsContainer {
+        width: 100%;
+        }
+    }
+
+    /* postComment */
+    .postComment {
+        form {
+            width: 100%;
+        }
+    }
 }
 
 
@@ -63,18 +119,18 @@
 
 
 /* discovering */
-.discovering {
-    .flexContainer {
-        display: block;
+    .discovering {
+        .flexContainer {
+            display: block;
 
-        .textContainer {
-            width: 100%;
-        }
-        .imgContainer {
-            display: none;
+            .textContainer {
+                width: 100%;
+            }
+            .imgContainer {
+                display: none;
+            }
         }
     }
-}
 
 
 /* gallery */
@@ -88,7 +144,47 @@
             }
         }
     }
+
+    .blog {
+        .blogSidebar {
+            .boxShadow {
+                .imgContainer {
+                    padding: 0 20px;
+                }
+            }
+            .textContainer  {
+                display: block;
+                .ourMission, .recentPost {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
+
+
+@media (max-width: 800px) {
+    .blog {
+        .blogSidebar {
+            .boxShadow {
+                flex-direction: column;
+                .imgContainer {
+                    padding: 30px 10vw 0 10vw;
+                }
+            }
+            .textContainer  {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
 
 @media (max-width: 500px) {
     .gallery {
