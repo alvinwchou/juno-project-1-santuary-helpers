@@ -58,7 +58,6 @@
             position: static;
             .textContainer {
                 padding: 40px 10vw;
-                
             }
         }
         .blogSidebar {
@@ -75,7 +74,6 @@
                     width: 100%;
                     padding-right: 40px;
                 }
-
             }
             .textContainer {
                 display: flex;
@@ -87,6 +85,8 @@
         }
         
     }
+
+
     /* comments */
     .comments {
         .commentsContainer {
@@ -94,14 +94,13 @@
         }
     }
     
+
     /* postComment */
     .postComment {
         form {
             width: 100%;
         }
     }
-    
-    
     
     
     /* contact */
@@ -122,7 +121,6 @@
 
 
 
-
 @media (max-width: 1000px) {
     header {
         .mainNav {
@@ -134,7 +132,7 @@
     }
 
 
-/* discovering */
+    /* discovering */
     .discovering {
         .flexContainer {
             display: block;
@@ -149,7 +147,7 @@
     }
 
 
-/* gallery */
+    /* gallery */
     .gallery {
         .flexContainer {
             .imgContainer {
@@ -178,6 +176,22 @@
     }
 
 
+    /* postComment */
+    .postComment {
+        form {
+            width: 100%;
+            &.flexContainer {
+                .flexContainer{
+                    flex-direction: column;
+                }
+            }
+            input {
+                width: 100%;
+            }
+        }
+    }
+
+
      /* contact */
     .sendMessage {
         .flexContainer {
@@ -189,15 +203,17 @@
                     width: 100%;
                 }
             }
-        .contactInfo {
-            padding-top: 50px;
-        }
+            .contactInfo {
+                padding-top: 50px;
+            }
         }
     }
 }
 
 
+
 @media (max-width: 800px) {
+    /* blog */
     .blog {
         .blogSidebar {
             .boxShadow {
@@ -225,12 +241,7 @@
 
 
 
-
-
-
-
-
-@media (max-width: 500px) {
+@media (max-width: 530px) {
     .gallery {
         .flexContainer {
             flex-direction: column;
@@ -239,6 +250,30 @@
                 padding: 30px;
                 &:last-child {
                     display: block;
+                }
+            }
+        }
+    }
+
+
+    /* postComment */
+    .postComment {
+        input,
+        textarea {
+            padding: 35px 10px;
+        }
+    }
+
+
+    /* sendMessage */
+    .sendMessage {
+        background-color: $tertiary;
+        form {
+            input,
+            textarea {
+                padding: 35px 10px;
+                &::placeholder {
+                    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
                 }
             }
         }

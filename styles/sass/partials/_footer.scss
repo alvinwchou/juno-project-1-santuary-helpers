@@ -1,2 +1,10 @@
 /* _footer.scss */
 
+footer {
+    background-color: $solidBlack;
+    text-align: center;
+    p {
+        color: $solidWhite;
+        padding: 5px 0;
+    }
+}

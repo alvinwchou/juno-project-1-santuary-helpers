@@ -25,11 +25,11 @@ header {
         background-image: url(../sanctuary-helpers-final-images/header-box.png);
         background-repeat: no-repeat;
         width: 55vw;
-    height: calc(616 / 1600 * 100vw);
-    height: clamp(50px, 616 / 1600 * 100vw, 800px);
-    background-size: cover;
-    position: absolute;
-    top: calc(297 / 1600 * 100vw);
+        height: calc(616 / 1600 * 100vw);
+        height: clamp(50px, 616 / 1600 * 100vw, 800px);
+        background-size: cover;
+        position: absolute;
+        top: calc(297 / 1600 * 100vw);
     }
 }
 
@@ -52,6 +52,8 @@ header {
 .mobileNav {
     padding-top: 0px;
     display: none;
+    position: relative;
+    z-index: 20;
     [type=checkbox]:focus + label {
         border: 1px dotted $secondary;
     }
@@ -84,11 +86,10 @@ h1 {
     margin-left: 134px;
 }
 
-/* blog header */
 
+/* blog header */
 .blogHeader {
     background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
-    // height: calc(568 / 1600 * 100vw);
     height: clamp(10px, 568 / 1600 * 100vw, 1000px);
     .flexContainer {
         justify-content: space-between;
@@ -100,6 +101,7 @@ h1 {
         margin-left: 0;
     }
 }
+
 
 /* contact header */
 .contactHeader {

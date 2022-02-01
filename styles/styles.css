@@ -459,6 +459,8 @@ header .headerBGContainer {
 .mobileNav {
   padding-top: 0px;
   display: none;
+  position: relative;
+  z-index: 20;
 }
 .mobileNav [type=checkbox]:focus + label {
   border: 1px dotted #065635;
@@ -845,17 +847,16 @@ h1 {
   padding: 15px 0;
   width: 252px;
 }
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
+.sendMessage input:hover,
+.sendMessage input:focus,
+.sendMessage textarea:hover,
+.sendMessage textarea:focus {
   outline: none;
   border: 2px dotted #065635;
   font-weight: 700;
 }
 
-/* footer */
+/* _footer.scss */
 footer {
   background-color: #000;
   text-align: center;
@@ -865,7 +866,6 @@ footer p {
   padding: 5px 0;
 }
 
-/* _footer.scss */
 /* _mediaQueries.scss */
 @media (max-width: 1350px) {
   /* header */
@@ -1034,6 +1034,20 @@ footer p {
     width: 100%;
   }
 
+  /* postComment */
+  .postComment form {
+    width: 100%;
+  }
+  .postComment form.flexContainer .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .postComment form input {
+    width: 100%;
+  }
+
   /* contact */
   .sendMessage .flexContainer {
     -webkit-box-orient: vertical;
@@ -1053,6 +1067,7 @@ footer p {
   }
 }
 @media (max-width: 800px) {
+  /* blog */
   .blog .blogSidebar .boxShadow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1074,7 +1089,7 @@ footer p {
             flex-direction: column;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 530px) {
   .gallery .flexContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1087,5 +1102,36 @@ footer p {
   }
   .gallery .flexContainer .imgContainer:last-child {
     display: block;
+  }
+
+  /* postComment */
+  .postComment input,
+.postComment textarea {
+    padding: 35px 10px;
+  }
+
+  /* sendMessage */
+  .sendMessage {
+    background-color: #e0fddf;
+  }
+  .sendMessage form input,
+.sendMessage form textarea {
+    padding: 35px 10px;
+  }
+  .sendMessage form input::-webkit-input-placeholder, .sendMessage form textarea::-webkit-input-placeholder {
+    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
+  }
+  .sendMessage form input::-moz-placeholder, .sendMessage form textarea::-moz-placeholder {
+    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
+  }
+  .sendMessage form input:-ms-input-placeholder, .sendMessage form textarea:-ms-input-placeholder {
+    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
+  }
+  .sendMessage form input::-ms-input-placeholder, .sendMessage form textarea::-ms-input-placeholder {
+    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
+  }
+  .sendMessage form input::placeholder,
+.sendMessage form textarea::placeholder {
+    font-size: clamp(0.6rem, 5.3vw - 6.66px, 1rem);
   }
 }

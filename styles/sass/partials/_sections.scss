@@ -47,15 +47,12 @@
             padding: 15px 0;
         }
     }
-    
-
     .fa-stack {
         color: $primary;
         .fa-stack-1x {
             color: $solidBlack;
         }
     }
-
     a {
         text-align: left;
         h2 {
@@ -139,10 +136,12 @@
     }
 }
 
+
 /* blog */
 .blogMain {
     background-color: $tertiary;
 }
+
 .blogMainBar {
     width: 60vw;
     position: relative;
@@ -218,6 +217,7 @@
     }
 }
 
+
 /* postComment */
 .postComment {
     padding-bottom: 100px;
@@ -237,6 +237,7 @@
         }
     }
 }
+
 
 /* sendMessage */
 .sendMessage {
@@ -284,9 +285,7 @@
             padding: 15px 0;
             width: 252px
         }
-
     }
-}
     input:hover,
     input:focus,
     textarea:hover,
@@ -294,15 +293,5 @@
         outline: none;
         border: 2px dotted $secondary;
         font-weight: 700;
-    }
-
-
-/* footer */
-footer {
-    background-color: $solidBlack;
-    text-align: center;
-    p {
-        color: $solidWhite;
-        padding: 5px 0;
     }
 }
