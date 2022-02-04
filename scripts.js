@@ -50,6 +50,7 @@ form.addEventListener('submit', function(e) {
 
     if (inputText.value && inputEmail.value && inputMessage.value){
         console.log(`complete`);
+        addComment(inputText.value, inputMessage.value)
         alert('You have successfully submitted!')
         inputText.value = "";
         inputEmail.value = "";
@@ -109,6 +110,8 @@ const commentsSectionWrapper = commentsSection.children;
 //     create and append p
 //         add comment
 
+
+function addComment(name, comment) {
 const newCommentContainer = document.createElement('div');
 newCommentContainer.classList.add('commentsContainer', 'flexContainer');
 // console.log(newCommentContainer.classList);
@@ -136,10 +139,10 @@ newCommentTextContainer.classList.add('textContainer')
 // newCommentTextContainer.appendChild(newCommentParagraph);
 
 const newCommentHead = document.createElement('p');
-newCommentHead.textContent = "Time stamp, Name";
+newCommentHead.textContent = `Time stamp, ${name}`;
 
 const newCommentParagraph = document.createElement('p');
-newCommentParagraph.textContent = "Comment"; 
+newCommentParagraph.textContent = `${comment}`; 
 
 // newCommentHead.appendChild(newCommentParagraph);
 // console.log(newCommentHead);
@@ -150,3 +153,30 @@ newCommentTextContainer.appendChild(newCommentParagraph);
 newCommentContainer.appendChild(newCommentTextContainer);
 
 commentsSectionWrapper[0].appendChild(newCommentContainer);
+};
+
+const today= new Date();
+const timestamp = `${today.getDay()} ${today.getMonth()+1} ${today.getDate()} ${today.getFullYear()}, `
+console.log(timestamp);
+
+
+// function timestamp() {
+    // const today = new Date()
+    const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    const monthsOfTheYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+//     // return `daysOfTheYear[today.getDay()] monthsOfTheYear[today.getMonth()] ${today.getDate()} ${today.getFullYear()}, `
+// }
+
+const ordinal = (x) => {
+    if (x == "1" || x == "21" || x == "31") {
+        return "st";
+    } else if (x == "2" || x == "22" ) {
+        return "nd";
+    } else if (x == "3" || x == "22" ) {
+        return "rd";
+    } else {
+        return "th";
+    }
+}
+console.log(ordinal(11));
