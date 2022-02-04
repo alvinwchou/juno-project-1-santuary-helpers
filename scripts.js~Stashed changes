@@ -1,0 +1,54 @@
+// document.querySelector();
+// document.querySelectorAll();
+// document.getElementById();
+// document.getElementsByClassName();
+
+// document.createElement();
+// .innerHTML;
+// .textContent;
+// .appenChild();
+
+// const heading3 = document.querySelector('h3');
+// heading3.innerHTML = "JS <strong>fun</strong>";
+
+const footer = document.querySelector('footer');
+footer.children[0].textContent = "My first JS edit";
+
+const header3 = document.querySelector('h3');
+header3.textContent = "LOGO";
+// console.log(header3);
+header3.style.fontSize = "3rem";
+
+
+const aElement = document.querySelectorAll('a');
+console.log(aElement[9].attributes.href.nodeValue);
+for (let i = 0; i < aElement.length; i++) {
+    if (aElement[i].attributes.href.nodeValue == "#") {
+        console.log(`This one has #`);
+        aElement[i].attributes.href.nodeValue = "https://sd.keepcalms.com/i-w600/keep-calm-its-not-finished-yet.jpg";
+        // console.log(aElement[i].attributes.href.nodeValue);
+    } 
+    // else {console.log(`Position ${i} does not have #`)}
+}
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const inputText = document.querySelector('input');
+    console.log(inputText)
+    // if ()
+    alert('You have successfully submitted!')
+})
+console.log(form);
+
+
+
+// const form = document.querySelector('form');
+// form.addEventListener('submit', function() {
+//     alert('You have successfully submitted!');
+// });
+
+// const heading = document.querySelectorAll('h1');
+// heading.addEventListener('click', function() {
+//     alert("Hello");
+// })
