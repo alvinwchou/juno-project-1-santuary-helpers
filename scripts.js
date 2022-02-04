@@ -126,14 +126,27 @@ newCommentContainer.appendChild(newCommentImgContainer);
 const newCommentTextContainer = document.createElement('div');
 newCommentTextContainer.classList.add('textContainer')
 
-const newCommentParagraph = document.createElement('p');
-newCommentParagraph.textContent = "Time stamp, Name";
+// const newCommentParagraph = document.createElement('p');
+// newCommentParagraph.textContent = "Time stamp, Name";
 
-newCommentTextContainer.appendChild(newCommentParagraph);
+// newCommentTextContainer.appendChild(newCommentParagraph);
 
 // newCommentParagraph.textContent = "Comment"; 
 
+// newCommentTextContainer.appendChild(newCommentParagraph);
+
+const newCommentHead = document.createElement('p');
+newCommentHead.textContent = "Time stamp, Name";
+
+const newCommentParagraph = document.createElement('p');
+newCommentParagraph.textContent = "Comment"; 
+
+// newCommentHead.appendChild(newCommentParagraph);
+// console.log(newCommentHead);
+
+newCommentTextContainer.appendChild(newCommentHead);
 newCommentTextContainer.appendChild(newCommentParagraph);
+
 newCommentContainer.appendChild(newCommentTextContainer);
 
 commentsSectionWrapper[0].appendChild(newCommentContainer);
