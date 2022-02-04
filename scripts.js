@@ -31,6 +31,14 @@ for (let i = 0; i < aElement.length; i++) {
     // else {console.log(`Position ${i} does not have #`)}
 }
 
+// console.log(form);
+// const inputText = document.querySelector("input[id=name]");
+// console.log(inputText, inputText.value);
+
+
+// const inputMessage = document.querySelector("textarea");
+// console.log(inputMessage.id)
+
 const form = document.querySelector('form');
 form.addEventListener('submit', function(e) {
     e.preventDefault();
@@ -58,11 +66,74 @@ form.addEventListener('submit', function(e) {
         }
     }
 })
-// console.log(form);
-// const inputText = document.querySelector("input[id=name]");
-// console.log(inputText, inputText.value);
 
 
-// const inputMessage = document.querySelector("textarea");
-// console.log(inputMessage.id)
 
+
+
+
+// create a var
+// create Element
+// add text to Element
+// append element t var
+
+// const commentsSection = document.getElementById("comments");
+// const commentsWrapper = document.getElementsByClassName("wrapper")
+// console.log(commentsSection, commentsSection.children, commentsWrapper);
+// // commentsSection.children.appendChild('testing')
+// const commentsSectionWrapper = commentsSection.children;
+// console.log(commentsSectionWrapper);
+// // commentsSectionWrapper.appendChild("testinggg")
+// const newComment = document.createElement('p')
+// newComment.textContent = "testingggg"
+// // commentsSection.children.appendChild(newComment)
+// commentsSectionWrapper[0].appendChild(newComment);
+
+const commentsSection = document.getElementById("comments");
+const commentsSectionWrapper = commentsSection.children;
+
+
+
+
+// create div Element
+// add classes commentsContainer flexContainer
+// create and append child div
+//     add class imgContainer
+//     create and append child img
+//         add src
+
+// create and append child div
+//     add class textContainer
+//     create and append p
+//         add date and name
+//     create and append p
+//         add comment
+
+const newCommentContainer = document.createElement('div');
+newCommentContainer.classList.add('commentsContainer', 'flexContainer');
+// console.log(newCommentContainer.classList);
+const newCommentImgContainer = document.createElement('div');
+newCommentImgContainer.classList.add('imgContainer');
+
+const newCommentImg = document.createElement('img')
+// console.log(newCommentImg);
+newCommentImg.src = 'https://cdn.pixabay.com/photo/2019/09/14/09/44/cat-4475583_960_720.png';
+
+newCommentImgContainer.appendChild(newCommentImg);
+newCommentContainer.appendChild(newCommentImgContainer);
+
+
+const newCommentTextContainer = document.createElement('div');
+newCommentTextContainer.classList.add('textContainer')
+
+const newCommentParagraph = document.createElement('p');
+newCommentParagraph.textContent = "Time stamp, Name";
+
+newCommentTextContainer.appendChild(newCommentParagraph);
+
+// newCommentParagraph.textContent = "Comment"; 
+
+newCommentTextContainer.appendChild(newCommentParagraph);
+newCommentContainer.appendChild(newCommentTextContainer);
+
+commentsSectionWrapper[0].appendChild(newCommentContainer);
