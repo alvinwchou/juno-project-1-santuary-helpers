@@ -93,9 +93,6 @@ form.addEventListener('submit', function(e) {
 const commentsSection = document.getElementById("comments");
 const commentsSectionWrapper = commentsSection.children;
 
-
-
-
 // create div Element
 // add classes commentsContainer flexContainer
 // create and append child div
@@ -110,73 +107,72 @@ const commentsSectionWrapper = commentsSection.children;
 //     create and append p
 //         add comment
 
-
 function addComment(name, comment) {
-const newCommentContainer = document.createElement('div');
-newCommentContainer.classList.add('commentsContainer', 'flexContainer');
-// console.log(newCommentContainer.classList);
-const newCommentImgContainer = document.createElement('div');
-newCommentImgContainer.classList.add('imgContainer');
+    const newCommentContainer = document.createElement('div');
+    newCommentContainer.classList.add('commentsContainer', 'flexContainer');
+    // console.log(newCommentContainer.classList);
+    const newCommentImgContainer = document.createElement('div');
+    newCommentImgContainer.classList.add('imgContainer');
 
-const newCommentImg = document.createElement('img')
-// console.log(newCommentImg);
-newCommentImg.src = 'https://cdn.pixabay.com/photo/2019/09/14/09/44/cat-4475583_960_720.png';
+    const newCommentImg = document.createElement('img')
+    // console.log(newCommentImg);
+    newCommentImg.src = 'https://cdn.pixabay.com/photo/2019/09/14/09/44/cat-4475583_960_720.png';
 
-newCommentImgContainer.appendChild(newCommentImg);
-newCommentContainer.appendChild(newCommentImgContainer);
+    newCommentImgContainer.appendChild(newCommentImg);
+    newCommentContainer.appendChild(newCommentImgContainer);
 
 
-const newCommentTextContainer = document.createElement('div');
-newCommentTextContainer.classList.add('textContainer')
+    const newCommentTextContainer = document.createElement('div');
+    newCommentTextContainer.classList.add('textContainer')
 
-// const newCommentParagraph = document.createElement('p');
-// newCommentParagraph.textContent = "Time stamp, Name";
+    // const newCommentParagraph = document.createElement('p');
+    // newCommentParagraph.textContent = "Time stamp, Name";
 
-// newCommentTextContainer.appendChild(newCommentParagraph);
+    // newCommentTextContainer.appendChild(newCommentParagraph);
 
-// newCommentParagraph.textContent = "Comment"; 
+    // newCommentParagraph.textContent = "Comment"; 
 
-// newCommentTextContainer.appendChild(newCommentParagraph);
+    // newCommentTextContainer.appendChild(newCommentParagraph);
 
-const newCommentHead = document.createElement('p');
-newCommentHead.textContent = `Time stamp, ${name}`;
+    const newCommentHead = document.createElement('p');
+    newCommentHead.textContent = `${timestamp()}, by ${name}`;
 
-const newCommentParagraph = document.createElement('p');
-newCommentParagraph.textContent = `${comment}`; 
+    const newCommentParagraph = document.createElement('p');
+    newCommentParagraph.textContent = `${comment}`; 
 
-// newCommentHead.appendChild(newCommentParagraph);
-// console.log(newCommentHead);
+    // newCommentHead.appendChild(newCommentParagraph);
+    // console.log(newCommentHead);
 
-newCommentTextContainer.appendChild(newCommentHead);
-newCommentTextContainer.appendChild(newCommentParagraph);
+    newCommentTextContainer.appendChild(newCommentHead);
+    newCommentTextContainer.appendChild(newCommentParagraph);
 
-newCommentContainer.appendChild(newCommentTextContainer);
+    newCommentContainer.appendChild(newCommentTextContainer);
 
-commentsSectionWrapper[0].appendChild(newCommentContainer);
+    commentsSectionWrapper[0].appendChild(newCommentContainer);
 };
 
-const today= new Date();
-const timestamp = `${today.getDay()} ${today.getMonth()+1} ${today.getDate()} ${today.getFullYear()}, `
-console.log(timestamp);
+// const today= new Date();
+// const timestamp = `${today.getDay()} ${today.getMonth()+1} ${today.getDate()} ${today.getFullYear()}, `
+// console.log(timestamp);
 
 
-// function timestamp() {
-    // const today = new Date()
+function timestamp() {
+    const today = new Date();
     const daysOfTheWeek = ["Monday", "Tuesday", "Wednesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     const monthsOfTheYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-//     // return `daysOfTheYear[today.getDay()] monthsOfTheYear[today.getMonth()] ${today.getDate()} ${today.getFullYear()}, `
-// }
-
-const ordinal = (x) => {
-    if (x == "1" || x == "21" || x == "31") {
-        return "st";
-    } else if (x == "2" || x == "22" ) {
-        return "nd";
-    } else if (x == "3" || x == "22" ) {
-        return "rd";
-    } else {
-        return "th";
-    }
+    const ordinal = () => {
+        let day = today.getDate();
+        if (day == "1" || day == "21" || day == "31") {
+            return "st";
+        } else if (day == "2" || day == "22" ) {
+            return "nd";
+        } else if (day == "3" || day == "22" ) {
+            return "rd";
+        } else {
+            return "th";
+        };
+    };
+    return `${daysOfTheWeek[today.getDay()]} ${monthsOfTheYear[today.getMonth()]} ${today.getDate()}${ordinal()}, ${today.getFullYear()} `;
 }
-console.log(ordinal(11));
+
+console.log(timestamp());
