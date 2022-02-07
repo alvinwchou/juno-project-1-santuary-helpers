@@ -178,5 +178,8 @@ function timestamp() {
 console.log(timestamp());
 
 
+const button = document.querySelector(".button");
 
-
+form.addEventListener('submit', function() {
+    button.style.background = "limegreen";
+})

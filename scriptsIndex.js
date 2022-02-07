@@ -53,3 +53,70 @@ function randomColor() {
 }
 
 console.log(moreContainer[3]);
+
+
+
+const gallerySection = document.querySelector('.gallery')
+console.log("Gallery Section Start");
+console.log(gallerySection);
+
+const arrows = document.createElement('div')
+arrows.classList.add('flexContainer')
+arrows.style.justifyContent = "space-evenly"
+
+const previous = document.createElement('p')
+previous.textContent = "previous"
+arrows.appendChild(previous);
+const next = document.createElement('p')
+next.textContent = "next"
+arrows.appendChild(next);
+gallerySection.appendChild(arrows)
+
+const galleryImgContainer = gallerySection.querySelectorAll('.imgContainer')
+console.log(galleryImgContainer);
+
+galleryImgContainer[0].style.order = "1";
+galleryImgContainer[1].style.order = "2";
+galleryImgContainer[2].style.order = "3";
+
+let numberOfClicks = 0;
+
+next.addEventListener('click', function() {
+    console.log('next')
+    numberOfClicks++;
+    if (numberOfClicks % 3 == 0) {
+        galleryImgContainer[0].style.order = "1";
+        galleryImgContainer[1].style.order = "2";
+        galleryImgContainer[2].style.order = "3";
+    } else if (numberOfClicks % 3 == 1) {
+        galleryImgContainer[0].style.order = "3";
+        galleryImgContainer[1].style.order = "1";
+        galleryImgContainer[2].style.order = "2";
+    } else if (numberOfClicks % 3 == 2) {
+        galleryImgContainer[0].style.order = "2";
+        galleryImgContainer[1].style.order = "3";
+        galleryImgContainer[2].style.order = "1";
+    };
+});
+
+previous.addEventListener('click', function () {
+    console.log('previous')
+    console.log(numberOfClicks);
+    if (numberOfClicks == 0) {
+        numberOfClicks = 3;
+    }
+    numberOfClicks--;
+    if (numberOfClicks % 3 == 0) {
+        galleryImgContainer[0].style.order = "1";
+        galleryImgContainer[1].style.order = "2";
+        galleryImgContainer[2].style.order = "3";
+    } else if (numberOfClicks % 3 == 1) {
+        galleryImgContainer[0].style.order = "3";
+        galleryImgContainer[1].style.order = "1";
+        galleryImgContainer[2].style.order = "2";
+    } else if (numberOfClicks % 3 == 2) {
+        galleryImgContainer[0].style.order = "2";
+        galleryImgContainer[1].style.order = "3";
+        galleryImgContainer[2].style.order = "1";
+    };
+});
