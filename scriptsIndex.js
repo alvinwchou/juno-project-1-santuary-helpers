@@ -205,3 +205,24 @@ if (document.querySelector("input[type = checkbox]").checked == 'true') {
     console.log(document.querySelector('.slideOutNav').style.right)
 }
 
+
+const onPageLoad = function() {
+    const welcome = document.createElement('div')
+    Object.assign(welcome.style, {
+        border: "5px solid #065635",
+        backgroundColor: "#e0fddf",
+        width: "80%",
+        position: "fixed",
+        top: "50vh",
+        left: "50vw",
+        transform: "translate(-50% , -50%)",
+        textAlign: "center",
+        padding: "200px 100px"
+    })
+    welcome.innerHTML = "<h2>Welcome to Sanctuary Helpers</h2><p>If you have any questions please use the contact page</p><p>Enjoy your time while browsing withus</p>";
+    document.querySelector('main').append(welcome);
+    document.querySelector('html').addEventListener('click', () => { welcome.style.display = "none"})
+    setTimeout(() =>{welcome.style.display = "none"}, 5000);
+}
+
+onPageLoad();
