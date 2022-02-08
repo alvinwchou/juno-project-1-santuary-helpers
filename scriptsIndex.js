@@ -78,6 +78,7 @@ console.log(galleryImgContainer);
 galleryImgContainer[0].style.order = "1";
 galleryImgContainer[1].style.order = "2";
 galleryImgContainer[2].style.order = "3";
+focus();
 
 let numberOfClicks = 0;
 
@@ -97,6 +98,7 @@ next.addEventListener('click', function() {
         galleryImgContainer[1].style.order = "3";
         galleryImgContainer[2].style.order = "1";
     };
+    focus();
 });
 
 previous.addEventListener('click', function () {
@@ -119,4 +121,22 @@ previous.addEventListener('click', function () {
         galleryImgContainer[1].style.order = "3";
         galleryImgContainer[2].style.order = "1";
     };
+    focus();
 });
+
+function focus() {
+    if (galleryImgContainer[1].style.order == 2) {
+        galleryImgContainer[1].style.opacity = "1";
+        galleryImgContainer[0].style.opacity = "0.2";
+        galleryImgContainer[2].style.opacity = "0.2";
+    } else if (galleryImgContainer[2].style.order == 2) {
+        galleryImgContainer[2].style.opacity = "1";
+        galleryImgContainer[1].style.opacity = "0.2";
+        galleryImgContainer[0].style.opacity = "0.2";
+    } else if (galleryImgContainer[0].style.order == 2) {
+        galleryImgContainer[0].style.opacity = "1";
+        galleryImgContainer[1].style.opacity = "0.2";
+        galleryImgContainer[2].style.opacity = "0.2";
+    }
+}
+
