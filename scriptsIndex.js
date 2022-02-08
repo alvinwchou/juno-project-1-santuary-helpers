@@ -140,3 +140,55 @@ function focus() {
     }
 }
 
+console.log("Slide out nav");
+document.querySelector('.dropdownMenu').style.display = "none";
+const slideOutNav = document.querySelector('.dropdownMenu');
+slideOutNav.classList.add('slideOutNav')
+
+document.querySelector('.mobileNav').appendChild(slideOutNav)
+
+document.querySelector('.slideOutNav').style.display = "block"
+document.querySelector('.slideOutNav').style.height = "100vh";
+document.querySelector('.slideOutNav').style.width = "100%";
+document.querySelector('.slideOutNav').style.maxWidth = "500px";
+document.querySelector('.slideOutNav').style.backgroundColor = "rgba(255, 255, 255)";
+document.querySelector('.slideOutNav').style.position = "fixed";
+// document.querySelector('.slideOutNav').style.top = "0"
+document.querySelector('.slideOutNav').style.right = "-500px"
+
+
+// document.querySelector('.slideOutNav').style = {
+//     position: "fixed",
+//     top: "0"
+// }
+// console.log(document.querySelector('.slideOutNav').style.position)
+
+const buttonContainer = document.createElement('div')
+buttonContainer.classList.add('buttonContainer')
+buttonContainer.innerHTML = '<button> close </button>'
+
+document.querySelector('.slideOutNav').prepend(buttonContainer)
+document.querySelector('.buttonContainer').style.fontFamily = '"Lato", sans - serif;'
+document.querySelector('.buttonContainer').style.fontWeight = "700";
+document.querySelector('.buttonContainer').style.lineHeight = "1.45rem";
+document.querySelector('.buttonContainer').style.textAlign = "right";
+document.querySelector('.buttonContainer').style.color = "fff";
+
+document.querySelector('.buttonContainer').children[0].style.backgroundColor = "rgba(255, 255, 255)";
+
+console.log(document.querySelector("input[type = checkbox]").checked, "here")
+if (document.querySelector("input[type = checkbox]").checked == 'true') {
+    document.querySelector('.slideOutNav').style.right = "0"
+    console.log(document.querySelector('.slideOutNav').style.right)
+} else {
+    console.log(document.querySelector("input[type = checkbox]").checked)
+    
+}
+document.querySelector('.buttonContainer').children[0].addEventListener('click', function() {
+    
+})
+
+
+document.querySelector("input[type = checkbox]").addEventListener('click', function() {
+    console.log(document.querySelector("input[type = checkbox]").checked)
+})
