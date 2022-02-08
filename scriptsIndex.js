@@ -141,24 +141,26 @@ function focus() {
 }
 
 console.log("Slide out nav");
-document.querySelector('.dropdownMenu').style.display = "none";
 const slideOutNav = document.querySelector('.dropdownMenu');
+document.querySelector('.dropdownMenu').style.display = "none";
 slideOutNav.classList.add('slideOutNav')
 
 document.querySelector('.mobileNav').appendChild(slideOutNav);
 document.querySelector('.slideOutNav').style.display = "block";
-document.querySelector('.slideOutNav').style.height = "100vh";
-document.querySelector('.slideOutNav').style.width = "100%";
-document.querySelector('.slideOutNav').style.maxWidth = "500px";
-document.querySelector('.slideOutNav').style.backgroundColor = "rgba(255, 255, 255)";
-document.querySelector('.slideOutNav').style.position = "fixed";
-document.querySelector('.slideOutNav').style.top = "0";
-document.querySelector('.slideOutNav').style.right = "-500px";
 
-// document.querySelector('.slideOutNav').style = {
-//     position: "fixed",
-//     top: "0"
-// }
+slideOutNav.style.height = "100vh";
+slideOutNav.style.width = "100%";
+slideOutNav.style.maxWidth = "500px";
+slideOutNav.style.backgroundColor = "rgba(255, 255, 255)";
+// slideOutNav.style.position = "fixed";
+// slideOutNav.style.top = "0";
+slideOutNav.style.right = "-500px";
+slideOutNav.style.transition = "0.75s";
+
+Object.assign(slideOutNav.style, {
+    position: "fixed",
+    top: "0"
+})
 // console.log(document.querySelector('.slideOutNav').style.position)
 
 
