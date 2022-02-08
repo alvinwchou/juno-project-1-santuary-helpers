@@ -145,23 +145,31 @@ document.querySelector('.dropdownMenu').style.display = "none";
 const slideOutNav = document.querySelector('.dropdownMenu');
 slideOutNav.classList.add('slideOutNav')
 
-document.querySelector('.mobileNav').appendChild(slideOutNav)
-
-document.querySelector('.slideOutNav').style.display = "block"
+document.querySelector('.mobileNav').appendChild(slideOutNav);
+document.querySelector('.slideOutNav').style.display = "block";
 document.querySelector('.slideOutNav').style.height = "100vh";
 document.querySelector('.slideOutNav').style.width = "100%";
 document.querySelector('.slideOutNav').style.maxWidth = "500px";
 document.querySelector('.slideOutNav').style.backgroundColor = "rgba(255, 255, 255)";
 document.querySelector('.slideOutNav').style.position = "fixed";
-// document.querySelector('.slideOutNav').style.top = "0"
-document.querySelector('.slideOutNav').style.right = "-500px"
-
+document.querySelector('.slideOutNav').style.top = "0";
+document.querySelector('.slideOutNav').style.right = "-500px";
 
 // document.querySelector('.slideOutNav').style = {
 //     position: "fixed",
 //     top: "0"
 // }
 // console.log(document.querySelector('.slideOutNav').style.position)
+
+
+console.log(slideOutNav, "here");
+console.log(slideOutNav.childNodes, "here");
+console.log(slideOutNav.childNodes[2], "here");
+
+slideOutNav.childNodes[1].style.textAlign = "center";
+
+
+
 
 const buttonContainer = document.createElement('div')
 buttonContainer.classList.add('buttonContainer')
@@ -176,19 +184,22 @@ document.querySelector('.buttonContainer').style.color = "fff";
 
 document.querySelector('.buttonContainer').children[0].style.backgroundColor = "rgba(255, 255, 255)";
 
-console.log(document.querySelector("input[type = checkbox]").checked, "here")
+console.log(document.querySelector("input[type=checkbox]:checked"))
+
+document.querySelector("input[type = checkbox]").addEventListener('click', function() {
+    console.log(document.querySelector("input[type=checkbox]"))
+    console.log(document.querySelector("input[type=checkbox]").checked)
+    console.log(document.querySelector("input[type=checkbox]:checked"))
+    document.querySelector('.slideOutNav').style.right = "0"
+})
+
+document.querySelector('.buttonContainer').children[0].addEventListener('click', function() {
+    document.querySelector("input[type=checkbox]").checked = "";
+    document.querySelector('.slideOutNav').style.right = "-500px"
+})
+
 if (document.querySelector("input[type = checkbox]").checked == 'true') {
     document.querySelector('.slideOutNav').style.right = "0"
     console.log(document.querySelector('.slideOutNav').style.right)
-} else {
-    console.log(document.querySelector("input[type = checkbox]").checked)
-    
 }
-document.querySelector('.buttonContainer').children[0].addEventListener('click', function() {
-    
-})
 
-
-document.querySelector("input[type = checkbox]").addEventListener('click', function() {
-    console.log(document.querySelector("input[type = checkbox]").checked)
-})
